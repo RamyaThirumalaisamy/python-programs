@@ -39,7 +39,7 @@ def respond(text):
       search=record_audio()
       url="https://google.com/search?q="+search
       webbrowser.get().open(url)
-   if"open youtube" in text:
+   if "open youtube" in text:
       ans="what do you want search for"
       speech=gTTS(text=ans,lang="en",slow=False)
       speech.save("speech_audio.mp3")
